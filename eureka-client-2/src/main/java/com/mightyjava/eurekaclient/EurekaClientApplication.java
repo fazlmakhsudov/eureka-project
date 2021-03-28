@@ -14,17 +14,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import java.time.LocalDateTime;
-
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
 public class EurekaClientApplication {
 
-    private static final String HTTP_LOCALHOST_8002 = "http://localhost:8002/ask-time";
-
     @Value("${spring.application.name}")
     private String appName;
+
+    private static final String HTTP_LOCALHOST_8001_TIME = "http://localhost:8001/time";
 
     @Autowired
     private RestTemplate restTemplate;
@@ -42,15 +40,9 @@ public class EurekaClientApplication {
     @GetMapping("/ask-time")
     public String askWhatTime() throws JSONException {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put(String.format("ask time from %s", appName), LocalDateTime.now());
-        jsonObject.put("ask from microservice", restTemplate.exchange(HTTP_LOCALHOST_8002,
+        jsonObject.put(String.format("ask time from %s", appName), restTemplate.exchange(HTTP_LOCALHOST_8001_TIME,
                 HttpMethod.GET, null, String.class).getBody());
         return jsonObject.toString();
-    }
-
-    @GetMapping("/time")
-    public String obtainTime() {
-        return LocalDateTime.now().toString();
     }
 
     public static void main(String[] args) {
