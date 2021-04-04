@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org" >
+<head >
+    <meta charset = "UTF-8" >
+    <title >Add CSS and JS to Thymeleaf</title >
+    <link th:href = "@{/css/my-style.css}" rel = "stylesheet" />
+</head >
+<body >
+    <p class = "bold-letters" th:text = "'Welcome, ' + ${name} + '!'" />
+    <h3 >
+        <a th:href = "@{http://localhost:4001/swagger-ui.html}" >Rest api 1 (instance 1)</a >
+        <br />
+        <a th:href = "@{http://localhost:4002/swagger-ui.html}" >Rest api 1 (instance 2)</a >
+    </h3 >
+    <h3 >
+        <a th:href = "@{http://localhost:4003/swagger-ui.html}" >Rest api 3</a >
+    </h3 >
+    <h3 >
+        <a th:href = "@{http://localhost:4003/swagger-ui.html}" >Rest api 4</a >
+    </h3 >
+    <h3 >
+        <a th:href = "@{http://localhost:4003/swagger-ui.html}" >Rest api 5</a >
+    </h3 >
+    <h3 >
+        <a th:href = "@{http://localhost:5001/swagger-ui.html}" >Ribbon client 1</a >
+    </h3 >
+    <h3 >
+        <a th:href = "@{http://localhost:6001/swagger-ui.html}" >Zuul-proxy</a >
+    </h3 >
+    <h3 >
+        <a th:href = "@{http://localhost:9001/}" >Eureka server (instance 1)</a >
+        <br />
+        <a th:href = "@{http://localhost:9002/}" >Eureka server (instance 2)</a >
+    </h3 >
+</body >
+</html >
