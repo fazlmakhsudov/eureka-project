@@ -22,4 +22,7 @@ command="cd zuul-proxy/ && ./zuul-proxy.sh"
 echo $command
 gnome-terminal -- bash -c "$command; bash"
 
+echo "5 Run front page"
+google-chrome http://localhost:8080/
+
 echo "============================="
