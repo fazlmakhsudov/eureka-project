@@ -1,3 +1,13 @@
+docker-files/*
+target/*
+webapps2/*
+.idea/*
+
+*/docker-files/*
+*/target/*
+*/webapps2/*
+*/.idea/*
+
 # Compiled class file
 *.class
 
