@@ -23,6 +23,7 @@ echo $command
 gnome-terminal -- bash -c "$command; bash"
 
 echo "5 Run front page"
-google-chrome http://localhost:8080/
-
-echo "============================="
+command="cd front/ && ./front.sh"
+echo $command
+gnome-terminal -- bash -c "$command; bash"
+echo "======================"

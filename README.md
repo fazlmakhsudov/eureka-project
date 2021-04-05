@@ -27,6 +27,27 @@ Run script ./eureka-ultimate.sh
 - [http://localhost:5001/swagger-ui.html](http://localhost:5001/swagger-ui.html)
 
 ### Zuul-proxy
-- [http://localhost:6001/swagger-ui.html](http://localhost:6001/swagger-ui.html)
+- [http://localhost:6001/rest-api-1/books/random](http://localhost:6001/rest-api-1/books/random)
+- [http://localhost:6001/rest-api-1/users/random](http://localhost:6001/rest-api-1/users/random)
+- [http://localhost:6001/rest-api-1/cars/random](http://localhost:6001/rest-api-1/cars/random)
+- [http://localhost:6001/rest-api-1/brands/random](http://localhost:6001/rest-api-1/brands/random)
 
+- [http://localhost:6001/eureka-ribbon-client-1/books/random](http://localhost:6001/eureka-ribbon-client-1/books/random)
+- [http://localhost:6001/eureka-ribbon-client-1/users/random](http://localhost:6001/eureka-ribbon-client-1/users/random)
+- [http://localhost:6001/eureka-ribbon-client-1/cars/random](http://localhost:6001/eureka-ribbon-client-1/cars/random)
+- [http://localhost:6001/eureka-ribbon-client-1/brands/random](http://localhost:6001/eureka-ribbon-client-1/brands/random)
 
+- [http://localhost:6001/rest-api-3/books/random](http://localhost:6001/rest-api-3/books/random)
+- [http://localhost:6001/rest-api-3/users/random](http://localhost:6001/rest-api-3/users/random)
+- [http://localhost:6001/rest-api-3/cars/random](http://localhost:6001/rest-api-3/cars/random)
+- [http://localhost:6001/rest-api-3/brands/random](http://localhost:6001/rest-api-3/brands/random)
+
+- [http://localhost:6001/rest-api-4/books/random](http://localhost:6001/rest-api-4/books/random)
+- [http://localhost:6001/rest-api-4/users/random](http://localhost:6001/rest-api-4/users/random)
+- [http://localhost:6001/rest-api-4/cars/random](http://localhost:6001/rest-api-4/cars/random)
+- [http://localhost:6001/rest-api-4/brands/random](http://localhost:6001/rest-api-4/brands/random)
+
+- [http://localhost:6001/rest-api-5/books/random](http://localhost:6001/rest-api-5/books/random)
+- [http://localhost:6001/rest-api-5/users/random](http://localhost:6001/rest-api-5/users/random)
+- [http://localhost:6001/rest-api-5/cars/random](http://localhost:6001/rest-api-5/cars/random)
+- [http://localhost:6001/rest-api-5/brands/random](http://localhost:6001/rest-api-5/brands/random)
